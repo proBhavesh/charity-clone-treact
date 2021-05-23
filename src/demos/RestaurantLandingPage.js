@@ -6,12 +6,15 @@ import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-import TabGrid from "components/cards/TabCardGrid.js";
+import TabGrid from "components/cards/ThreeColSlider.js";
+import TabGrid2 from "components/cards/ThreeColSlider2.js";
+import TabGrid3 from "components/cards/ThreeColSlider3.js";
 import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "components/footers/SimpleFiveColumn.js";
 import News from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Volunteers from "components/cards/PortfolioTwoCardsWithImage.js";
+import About from "components/testimonials/TwoColumnWithImageAndRating.js";
 import chefIconImageSrc from "images/chef-icon.svg";
 import celebrationIconImageSrc from "images/celebration-icon.svg";
 import shopIconImageSrc from "images/shop-icon.svg";
@@ -39,7 +42,8 @@ export default () => {
         primaryButtonText="Donate Now"
         watchVideoButtonText="Meet The Doners"
       />
-      <MainFeature
+      <About/>
+      {/* <MainFeature
         subheading={<Subheading>Established Since 2014</Subheading>}
         heading={
           <>
@@ -66,15 +70,11 @@ export default () => {
         imageCss={imageCss}
         imageDecoratorBlob={true}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-      />
+      />*/}
       {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
-      <TabGrid
-        heading={
-          <>
-            Checkout our <HighlightedText>menu.</HighlightedText>
-          </>
-        }
-      />
+      <TabGrid />
+      <TabGrid2 />
+      <TabGrid3 />
       <Features
         heading={
           <>
@@ -104,7 +104,7 @@ export default () => {
         imageContainerCss={tw`p-2!`}
         imageCss={tw`w-20! h-20!`}
       />
-      <MainFeature2
+      {/*    <MainFeature2
         subheading={<Subheading>A Reputed Brand</Subheading>}
         heading={
           <>
@@ -134,7 +134,7 @@ export default () => {
         imageDecoratorBlob={true}
         imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
         textOnLeft={true}
-      />
+      />*/}
       <News />
       <Volunteers />
       <Testimonial

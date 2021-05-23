@@ -60,11 +60,11 @@ export default ({
   subheading = "Our Portfolio",
   headingHtmlComponent = (
     <>
-      We've some<span tw="text-primary-500">amazing volunteers.</span>
+      We've some<span tw="text-primary-500"> amazing volunteers.</span>
     </>
   ),
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
-  linkText = "View all Projects",
+  linkText = "View all volunteers",
   cardLinkText = "Read Case Study",
   textOnLeft = false
 }) => {

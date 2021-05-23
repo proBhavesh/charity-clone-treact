@@ -128,7 +128,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>SponerShip</Heading>
+          <Heading>Endowment Orphans</Heading>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
             <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
